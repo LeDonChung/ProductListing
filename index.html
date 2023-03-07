@@ -22,6 +22,7 @@
             --smooth: all .3s ease-in;
         }
         *{
+            box-sizing: inherit;
             margin: 0;
             padding: 0;
         }
@@ -31,8 +32,8 @@
             box-sizing: border-box;
         }
         .grid {
+            max-width: 1200px;
             margin: 0 auto;
-            width: 1200px;
         }
         .grid__row {
             display: flex;
@@ -41,7 +42,12 @@
         }
         .grid__column-3 {
             padding: 0 15px;
-            width: 22%;
+            width: 25%;
+        }
+
+        .grid__column-6 {
+            padding: 0 15px;
+            width: 50%;
         }
 
         
@@ -319,6 +325,88 @@
             background-color: #f4faf8;
             border-radius: 40%;
         }
+        .footer {
+            width: 100%;
+            height: 450px;
+            background-color: var(--text-color);
+        }
+
+        .footer__content {
+            height: 450px;
+        }
+
+        .footer__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .footer__subcribe {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .subcribe__title {
+            color: var(--while-color);
+            font-size: 28px;
+        }
+
+        .subcribe__description {
+            color: var(--while-color);
+
+        }
+
+        .subcribe__send {
+            display: flex;
+            justify-content: center;
+            width: 430px;
+            background-color: transparent;
+            border: 1px solid var(--while-color);
+            border-radius: 5px;
+        }
+
+        .subcribe__send-input {
+            width: 100%;
+        }
+
+        .subcribe__send-input__icon {
+            padding: 0 20px;
+            font-size: 20px;
+            line-height: 50px;
+            color: var(--while-color);
+        }
+
+        .subcribe__send-input__email {
+            
+            height: 50px;
+            width: 250px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: var(--while-color);
+        }
+
+        .subcribe__send-button {
+            width: 130px;
+            height: 52px;
+            color: var(--while-color);
+            background-color: var(--text-description);
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .subcribe__link {
+
+        }
+
+        .subcribe__link-icon {
+
+        }
+
     </style>
 </head>
 <body>
@@ -496,44 +584,79 @@
                     </div>
                 </div>
 
-                <div class="pagination">
-                    <div class="grid">
-                        <ul class="pagination-list">
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-item-link">
-                                    <i class="fa-solid fa-angle-left pagination-item-icon"></i>
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-item-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="pagination-item pagination-item--active">
-                                <a href="#" class="pagination-item-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-item-link">
-                                    3
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-item-link">
-                                    4
-                                </a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-item-link">
-                                    <i class="fa-solid fa-angle-right pagination-item-icon"></i>
-                                </a>
-                            </li>
-                        </ul>
+                
+            </div>
+        </div>
+        <div class="pagination">
+            <div class="grid">
+                <ul class="pagination-list">
+                    <li class="pagination-item">
+                        <a href="#" class="pagination-item-link">
+                            <i class="fa-solid fa-angle-left pagination-item-icon"></i>
+                        </a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#" class="pagination-item-link">
+                            1
+                        </a>
+                    </li>
+                    <li class="pagination-item pagination-item--active">
+                        <a href="#" class="pagination-item-link">
+                            2
+                        </a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#" class="pagination-item-link">
+                            3
+                        </a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#" class="pagination-item-link">
+                            4
+                        </a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#" class="pagination-item-link">
+                            <i class="fa-solid fa-angle-right pagination-item-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="grid">
+                <div class="grid__row footer__content">
+                    <div class="grid__column-6 footer__item">
+                        
+                    </div>
+                    <div class="grid__column-6 footer__item">
+                        <div class="footer__subcribe">
+                            <h1 class="subcribe__title">Receive new promotions</h1>
+                            <p class="subcribe__description">Lorem ipsum dolor sit amet consectetur.</p>
+                            <div class="subcribe__send">
+                                <div class="subcribe__send-input">
+                                    <i class="fa-regular fa-envelope subcribe__send-input__icon"></i>
+                                    <input placeholder="Input your email" type="email" class="subcribe__send-input__email">
+                                </div>
+                                <button class="subcribe__send-button">
+                                    Subcribe
+                                </button>
+                            </div>
+                            <div class="subcribe__link">
+                                <img src="./assets/img/Twitter 1.png" alt="" class="subcribe__link-icon">
+                                <img src="./assets/img/Facebook 1.png" alt="" class="subcribe__link-icon">
+                                <img src="./assets/img/LinkedIn 1.png" alt="" class="subcribe__link-icon">
+                                <img src="./assets/img/YouTube 1.png" alt="" class="subcribe__link-icon">
+                            </div>
+                            <p class="subcribe__description">@2022 Brand, Inc, Privacy Terms Sitemap</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>
