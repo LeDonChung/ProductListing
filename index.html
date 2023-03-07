@@ -122,6 +122,34 @@
         .banner-img {
 
         }
+
+        .product-search-other {
+
+        }
+        .product-search-list {
+            display: flex;
+            list-style: none;
+        }
+        .product-search-item {
+            display: inline-block;
+            height: 50px;
+            width: 180px;
+        }
+
+        .product-search-item-link {
+            font-weight: 50px;
+            text-decoration: none;
+            color: var(--text-description);
+        }
+        .product-search-other-search {
+
+        }
+        .product-search-other-search-icon {
+
+        }
+        .product-search-other-search-input {
+
+        }
     </style>
 </head>
 <body>
@@ -174,6 +202,38 @@
                 <p class="banner-content__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor unde vel </p>
             </div>
             <img class="banner-img" src="./assets/img/banner.png" alt="">
+        </div>
+        <div class="product">
+            <div class="grid">
+                <div class="product-search">
+                    <ul class="product-search-list">
+                        <li class="product-search-item">
+                            <a href="#" class="product-search-item-link">
+                                All Products
+                            </a>
+                        </li>
+                        <li class="product-search-item">
+                            <a href="#" class="product-search-item-link">
+                                Face
+                            </a>
+                        </li>
+                        <li class="product-search-item">
+                            <a href="#" class="product-search-item-link">
+                                Body
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="product-search-other">
+                        <div class="product-search-other-search">
+                            <i class="fa-solid fa-magnifying-glass product-search-other-search-icon" ></i>
+                            <input type="text" placeholder="Search product..." class="product-search-other-search-input">
+                        </div>
+                    </div>
+                </div>
+                <ul class="product-list">
+
+                </ul>
+            </div>
         </div>
     </div>
 </body>
