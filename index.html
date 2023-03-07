@@ -293,22 +293,31 @@
 
 
         .pagination {
-
+            margin: 100px 0;
         }
         .pagination-list {
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
         }
         .pagination-item {
-
+            display: inline-block;
+            padding: 12px 15px;
+            cursor: pointer;
         }
-        .pagination-item-link {
 
+        .pagination-item:hover {
+            background-color: #f4faf8;
+            border-radius: 40%;
         }
-        .pagination-item-icon {
-
+        .pagination-item-link, .pagination-item-icon {
+            text-decoration: none;
+            color: var(--text-description);
         }
         .pagination-item--active {
-
+            background-color: #f4faf8;
+            border-radius: 40%;
         }
     </style>
 </head>
