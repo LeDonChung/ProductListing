@@ -5,8 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Listing</title>
+
+    <!-- Google Font DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        :root{
+            --while-color: #FFFFFF;
+            --text-color: #323842;
+            --text-description: #459d7a;
+        }
+        *{
+            margin: 0;
+        }
+        html {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--while-color);
+        }
+        .grid {
+            margin: 0 auto;
+            width: 1200px;
+        }
+        .wrapper {
+
+        }
+        .navbar-container {
+            height: 64px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar__menu-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+        }
+        .navbar__menu-item {
+            margin-right: 20px;
+        }
+        .navbar__menu-link {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .navbar__other {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+                
+        .navbar__other-search {
+            display: flex;
+            align-items: center;
+            width: 200px;
+            height: 35px;
+            border: solid var(--text-description) 1px;
+            border-radius: 5px;
+        }
+        .navbar__other-search-input {
+            outline: none;
+            border: none;
+        }
+        .navbar__other-icon {
+            margin: 0 10px;
+            font-size: 12px;
+            color: var(--text-description);
+        }
+
+        .navbar__other-cart {
+            margin: 0 20px;
+        }
+
+        .navbar__other-cart__icon {
+            
+        }
+        
+        .navbar__orther-account {
+
+        }
+
+        .navbar__orther-acount-icon {
+
+        }
+
+        .banner-img {
+            width: 100%;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="navbar">
+            <div class="grid">
+                <div class="navbar-container">
+                    <ul class="navbar__menu-list">
+                        <li class="navbar__menu-item">
+                            <a href="#" class="navbar__menu-link">
+                                Shop
+                            </a>
+                        </li>
+                        <li class="navbar__menu-item">
+                            <a href="#" class="navbar__menu-link">
+                                Offers
+                            </a>
+                        </li>
+                        <li class="navbar__menu-item">
+                            <a href="#" class="navbar__menu-link">
+                                Our story
+                            </a>
+                        </li>
+                        <li class="navbar__menu-item">
+                            <a href="#" class="navbar__menu-link">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="./assets/img/logo.png" alt="" class="navbar__logo">
+                    <div class="navbar__other">
+                        <div class="navbar__other-search">
+                            <i class="fa-solid fa-magnifying-glass navbar__other-icon" ></i>
+                            <input type="text" placeholder="Search product..." class="navbar__other-search-input">
+                        </div>
+                        <div class="navbar__other-cart">
+                            <i class="fa-solid fa-cart-shopping navbar__other-cart__icon"></i>
+                            <span>Cart (0)</span>
+                        </div>
+                        <div class="navbar__orther-account">
+                            <i class="fa-solid fa-user navbar__orther-acount-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>
