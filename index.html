@@ -49,7 +49,10 @@
             padding: 0 15px;
             width: 50%;
         }
-
+        .grid__column-6-3 {
+            padding: 0 15px;
+            width: 33.33333333333333%;
+        }
         
         .wrapper {
 
@@ -231,6 +234,7 @@
             border-radius: 5px;
             background-color: #f3f4f6;
             color: var(--text-description);
+            cursor: pointer;
         }
 
         .product-search-other-sort-icon {
@@ -351,11 +355,16 @@
         .subcribe__title {
             color: var(--while-color);
             font-size: 28px;
+            
         }
 
         .subcribe__description {
             color: var(--while-color);
+            margin-top: 25px;
 
+        }
+        .subcribe__des {
+            color: var(--while-color);
         }
 
         .subcribe__send {
@@ -365,6 +374,7 @@
             background-color: transparent;
             border: 1px solid var(--while-color);
             border-radius: 5px;
+            margin-top: 15px;
         }
 
         .subcribe__send-input {
@@ -404,9 +414,31 @@
         }
 
         .subcribe__link-icon {
-
+            margin: 30px 0;
         }
 
+        .footer__about-content, .footer__about {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .footer__about-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            margin: auto 0;
+        }
+        .footer__about-item {
+            margin: auto 0;
+            margin: 10px 0;
+        }
+        .footer__about-item h1 {
+            color: var(--while-color);
+        }
+        .footer__about-item-link {
+            text-decoration: none;
+            color: var(--while-color);
+        }
     </style>
 </head>
 <body>
@@ -627,7 +659,67 @@
         <div class="footer">
             <div class="grid">
                 <div class="grid__row footer__content">
-                    <div class="grid__column-6 footer__item">
+                    <div class="grid__column-6">
+                        <div class="footer__about">
+                            <div class="grid__row footer__about-content">
+                                <div class="grid__column-3">
+                                    <ul class="footer__about-list">
+                                        <li class="footer__about-item">
+                                            <h1>About</h1>
+                                        </li>
+                                        <li class="footer__about-item">
+                                            <a href="#" class="footer__about-item-link">Home</a>
+                                        </li>
+                                        <li class="footer__about-item">
+                                            <a href="#" class="footer__about-item-link">Shop</a>
+                                        </li>
+                                        <li class="footer__about-item">
+                                            <a href="#" class="footer__about-item-link">Our story</a>
+                                        </li>
+                                        <li class="footer__about-item">
+                                            <a href="#" class="footer__about-item-link">Blogs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="grid__column-3">
+                                    <ul class="footer__about-list">
+                                        <li class="footer__about-item">
+                                            <h1>Help</h1>
+                                        </li>
+                                        <li class="footer__about-item">
+                                            <a href="#" class="footer__about-item-link">Shipping $ Returns</a>
+                                        </li>
+                                        <li class="footer__about-item">
+                                            <a href="#" class="footer__about-item-link">Track Order</a>
+                                        </li>
+                                        <li class="footer__about-item">
+                                            <a href="#" class="footer__about-item-link">FAQs</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="grid__column-3">
+                                    <ul class="footer__about-list">
+                                        <li class="footer__about-item">
+                                            <h1>Contact</h1>
+                                        </li>
+                                        <li class="footer__about-item">
+                                            <a href="#" class="footer__about-item-link">Phone</a>
+                                        </li>
+                                        <li class="footer__about-item">
+                                            <a href="#" class="footer__about-item-link">0867713557</a>
+                                        </li>
+                                        <li class="footer__about-item">
+                                            <a href="#" class="footer__about-item-link">Email</a>
+                                        </li>
+                                        <li class="footer__about-item">
+                                            <a href="#" class="footer__about-item-link">ledonchung12a2@gmail.com</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         
                     </div>
                     <div class="grid__column-6 footer__item">
@@ -649,7 +741,7 @@
                                 <img src="./assets/img/LinkedIn 1.png" alt="" class="subcribe__link-icon">
                                 <img src="./assets/img/YouTube 1.png" alt="" class="subcribe__link-icon">
                             </div>
-                            <p class="subcribe__description">@2022 Brand, Inc, Privacy Terms Sitemap</p>
+                            <p class="subcribe__des">@2022 Brand, Inc, Privacy Terms Sitemap</p>
                         </div>
 
                     </div>
